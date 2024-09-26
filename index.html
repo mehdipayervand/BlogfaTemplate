@@ -1,0 +1,434 @@
+<html>
+
+<head>
+   <title><-BlogAndPostTitle-></title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="author" content="<-BlogAuthor->">
+   <!-- از اینکه از قالب های ماه اسکین استفاده می کنید سپاسگزاریم -->
+   <meta name="language" content="Farsi">
+   <meta name="description" content="<-BlogAndPostTitle-> - <-BlogDescription-> - <-BlogTitle->">
+   <meta name="keywords" content="<-BlogAndPostTitle->,<-BlogId->">
+   <link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
+   <link href="http://mahskin.ir/view/24/style.css" type="text/css" rel="stylesheet">
+   <script language="javascript">
+      function GetBC(lngPostid) {
+         intTimeZone =< -BlogTimeZone ->;
+         strBlogId = "<-BlogId->";
+         intCount = -1;
+         strResult = "";
+         try {
+            for (i = 0; i < BlogComments.length; i += 2) {
+               if (BlogComments[i] == lngPostid)
+                  intCount = BlogComments[i + 1];
+            }
+         } catch (e) {
+         }
+         if (intCount == -1) strResult = "آرشیو نظرات";
+         if (intCount == 0) strResult = "نظر بدهید";
+         if (intCount > 0) strResult = intCount + " نظر";
+
+         strUrl = "/comments/?blogid=" + strBlogId + "&postid=" + lngPostid + "&timezone=" + intTimeZone;
+         strResult = "<a href=\"javascript:void(0)\" onclick=\"javascript:window.open('" + strUrl + "','blogfa_comments','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px')\" >" + strResult + " </a>";
+         document.write(strResult);
+      }
+      function OpenLD() {
+         window.open('/links', 'blogfa_ld', 'status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px');
+         return true;
+      }
+   </script>
+
+</head>
+
+<body>
+   <div style="display:none">
+      <h1><-BlogTitle-></h1>
+      <h3><-BlogDescription-></h3>
+      <h4><-BlogAndPostTitle-></h4>
+      <h5><-BlogAuthor-></h5>
+      <h6><-BlogTitle-> <-BlogDescription-></h6>
+   </div>
+   <div align=center>
+      <div style="width:1000">
+
+         <div class=MahSkin>
+
+            <div id=header>
+
+               <div class=top-BlogTitle></div>
+               <div class=top-menu>
+                  <div class=BlogTitle><-BlogTitle-></div>
+                  <div class=Description><-BlogDescription-></div>
+               </div>
+
+               <div class=top-menu2>
+
+                  <div style="float:right;width:0px;direction:rtl; height:20px"></div>
+                  <div style="float:right;width:500">
+                     <a href="/">صفحه اصلی</a> |
+                     <a href="/archive">آرشیو مطالب</a> |
+                     <a href="mailto:">تماس با من </a> |
+                     <a href="http://mahskin.ir" target="_blank" rel="nofollow">قالب وبلاگ</a> |
+                     <a href="/Profile/" target="_blank">پروفایل</a>
+                  </div>
+               </div>
+            </div>
+
+            <div id=main-back>
+               <div class=Sid>
+                  <div id=Sidebar>
+
+                     <BlogProfile>
+                        <div class="TopSid">
+                           <div class=TopSid2>درباره وب</div>
+                        </div>
+                        <div class=CenterSid>
+                           <div class=About>
+                              <BlogPhoto>
+                                 <center>
+                                    <img src="<-BlogPhotoLink->">
+                                 </center>
+                              </BlogPhoto>
+                              <br> <-BlogAbout->
+                           </div>
+                        </div>
+                        <div class=LowSid></div>
+                     </BlogProfile>
+
+
+                     <BlogAuthorsBlock>
+                        <div class="TopSid">
+                           <div class=TopSid2>نويسندگان</div>
+                        </div>
+                        <div class=CenterSid>
+                           <BlogAuthors>
+                              <div class=li-Sid><a href="<-AuthorLink->"><-AuthorName-></a></div>
+                           </BlogAuthors>
+                        </div>
+                        <div class=LowSid></div>
+                     </BlogAuthorsBlock>
+
+                     <BlogCategoriesBlock>
+                        <div class=TopSid>
+                           <div class=TopSid2>موضوعات وب</div>
+                        </div>
+                        <div class=CenterSid>
+                           <BlogCategories>
+                              <div class=li-Sid><a title="<-CategoryName->" href="<-CategoryLink->"><-CategoryName-></a>
+                              </div>
+                           </BlogCategories>
+                        </div>
+                        <div class=LowSid></div>
+                     </BlogCategoriesBlock>
+
+
+                     <div class="TopSid">
+                        <div class=TopSid2>فال حافظ</div>
+                     </div>
+                     <div class=CenterSid>
+                        <p align="center"><a title="فال حافظ" href="http://pIcHaK.net/hafez" target="_blank"
+                              rel="nofollow">
+                              <img alt="فال حافظ" src="http://pIcHaK.net/hafez/image/7.gif" border="0" width="120"
+                                 height="168"></a></p>
+                     </div>
+                     <div class=LowSid></div>
+
+
+
+                     <div class="TopSid">
+                        <div class=TopSid2>رتبه الکسا</div>
+                     </div>
+                     <div class=CenterSid>
+                        <center>
+                           <script language="javascript"
+                              src="http://picHak.NEt/alexa/code.php?urlweb=mahskin.ir&link=<-BlogUrl->&bgi=8&global=1&country=1&links=1&bgc=FFFFFF&borderw=1&borderc=D6D2B4"></script>
+                        </center>
+                     </div>
+                     <div class=LowSid></div>
+
+
+                     <div class="TopSid">
+                        <div class=TopSid2>ویژه ماه اسکین</div>
+                     </div>
+                     <div class=CenterSid>
+                        <div class=li-Sid><a target="_blank" href="https://pichak.net/crop/" rel="nofollow">قالب وبلاگ
+                              جدید</a>
+                        </div>
+                        <div class=li-Sid>﻿<a href="http://weblogstat.com/" title="وبلاگ استت" target="_blank"
+                              rel="nofollow">وبلاگ استت</a></div>
+                        <div class=li-Sid>﻿<a href="http://1milion.ir/" title="وب معرفی نژاد انواع سگ" target="_blank"
+                              rel="nofollow">وب معرفی نژاد انواع سگ</a></div>
+                        <div class=li-Sid>﻿<a href="http://20chatroom.ir/" title="وب بیست چت" target="_blank"
+                              rel="nofollow">وب بیست چت</a></div>
+                        ﻿<a href="http://aghghalacity.ir" rel="nofollow"><img border="0" src=""></a>
+                     </div>
+                     <div class=LowSid></div>
+
+                     <BlogLinksBlock>
+                        <div class="TopSid">
+                           <div class=TopSid2>لینک دوستان</div>
+                        </div>
+                        <div class=CenterSid>
+                           <BlogLinks>
+                              <div class=li-Sid><a target="_blank" href="<-LinkUrl->"><-LinkTitle-></a></div>
+                           </BlogLinks>
+                           <div class=li-Sid><a target="_blank" href="http://mahskin.ir" rel="nofollow">قالب وبلاگ</a>
+                           </div>
+                        </div>
+                        <div class=LowSid></div>
+                     </BlogLinksBlock>
+
+
+
+                     <script src="http://mahskin.ir/img/fall.php" type="text/javascript" charset="UTF-8"></script>
+
+
+                     <div class="TopSid">
+                        <div class=TopSid2>ساعت</div>
+                     </div>
+                     <div class=CenterSid>
+                        <p align="center">
+                           <script type=text/javascript
+                              src="http://pichak.net/blogcod/clock/show.php?urlweb=mahskin.ir&n=11"></script>
+                        </p>
+                     </div>
+                     <div class=LowSid></div>
+
+                     <BlogTagsBlock>
+                        <div class="TopSid">
+                           <div class=TopSid2>برچسب‌ها وب</div>
+                        </div>
+                        <div class=CenterSid>
+                           <BlogTags>
+                              <div class=li-Sid><a href="<-TagLink->"><-TagName-></a> <span
+                                    dir="rtl">(<-TagCount->)</span></a></div>
+                           </BlogTags>
+                        </div>
+                        <div class=LowSid></div>
+                     </BlogTagsBlock>
+
+
+
+                  </div>
+               </div>
+
+               <div class=main>
+
+                  <div class=post>
+
+                     <div id="RM-Back2"></div>
+
+                     <script src="http://mahskin.ir/img/trans.php" type="text/javascript" charset="UTF-8"></script>
+
+                     <BLOGFA>
+                        <div style="display:none">
+                           <h2><-PostTitle-></h2>
+                        </div>
+                        <div class=TopPost>
+                           <div class=TopPost2>
+                              <div class=Post-title><a href="<-PostLink->"><-PostTitle-></a></div>
+                           </div>
+                        </div>
+
+                        <div class=C-post>
+                           <div class=CenterPost><-PostContent->
+                                 <BlogPostCategoriesBlock><br>موضوعات مرتبط: <BlogPostCategories separator=" ، "><a
+                                          href="<-CategoryLink->"><-CategoryName-></a></BlogPostCategories>
+                                 </BlogPostCategoriesBlock>
+                                 <BlogPostTagsBlock><br>برچسب‌ها: <BlogPostTags separator=" , "><a
+                                          href="<-TagLink->"><-TagName-></a></BlogPostTags>
+                                 </BlogPostTagsBlock>
+                                 <br><br>
+                                 <BlogExtendedPost><b><a href="<-PostLink->">ادامه مطلب</a></b><br></BlogExtendedPost>
+                           </div>
+                        </div>
+
+                        <div class=LowPost>
+                           <div class=Comment>تاريخ : <-PostDate-> | <-PostTime-> | نویسنده : <-PostAuthor-> |
+                                       <BlogComment>
+                                          <script type="text/javascript">GetBC(< -PostId ->);</script>
+                                       </BlogComment>
+                           </div>
+                        </div>
+                     </BLOGFA>
+
+
+                     <BlogNextAndPreviousBlock>
+                        <div align=center class=C-post>
+                           <font face="Tahoma" style="font-size: 9pt">
+                              <BlogPreviousPageBlock><a href="<-BlogPreviousPageLink->">
+                                    << مطالب جدیدتر</a>
+                              </BlogPreviousPageBlock>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <BlogNextPageBlock><a href="<-BlogNextPageLink->">مطالب
+                                    قدیمی‌تر >></a></BlogNextPageBlock>
+                              <br>
+                           </font>
+                           </font><br>
+                        </div><br>
+                     </BlogNextAndPreviousBlock>
+
+
+                     <div class=C-post>
+                        <center><b>
+                              <font size="1">.:</font>
+                           </b> <a href="http://mahskin.ir" target="_blank" rel="nofollow">
+                              Weblog Themes By <b>M a h S k i n</b></a><b>
+                              <font size="1">:.</font>
+                           </b>
+                        </center>
+                     </div>
+
+                  </div>
+
+
+                  <div class=Sid>
+                     <div id=Sidebar>
+
+
+
+                        <div class="TopSid">
+                           <div class=TopSid2>آخرین مطالب</div>
+                        </div>
+                        <div class=CenterSid>
+                           <BlogPreviousItems items="10">
+                              <div class=li-Sid><a href="<-PostLink->" title="<-PostDate->"><-PostTitle-></a></div>
+                           </BlogPreviousItems>
+                        </div>
+                        <div class=LowSid></div>
+
+
+                        <div class="TopSid">
+                           <div class=TopSid2>جستجو</div>
+                        </div>
+                        <div class=CenterSid>
+                           <center>
+                              <form
+                                 style="width:140px;font-size:9pt;font-family:Tahoma;text-align:center;border:1px dotted #bbbbbb;padding:5px;direction:rtl"
+                                 target="_new" method=get action=http://www.google.com/search><a target="_blank"
+                                    href="http://pichak.net/blogcod/google/" rel="nofollow"><img border=0
+                                       src="http://www.pichak.net/blogcod/google/g.gif"></a><input name=q size=12
+                                    style="border:1px solid #999999;background:#efefef;font-family:Tahoma"><br><br><input
+                                    type="submit" name="btnG" value="جستجو" style="font-family:Tahoma"><br><input
+                                    value="<-BlogUrl->" type=radio name=sitesearch checked>در اين وبلاگ<br><input
+                                    type=radio name=sitesearch value="">در كل اينترنت<input type=hidden name=ie
+                                    value=UTF-8><input type=hidden name=oe value=UTF-8></form>
+                           </center>
+                        </div>
+                        <div class=LowSid></div>
+
+                        <BlogLinkDumpBlock>
+                           <div class="TopSid">
+                              <div class=TopSid2>پيوندهای روزانه</div>
+                           </div>
+                           <div class=CenterSid>
+                              <BlogLinkDump>
+                                 <div class=li-Sid><a target="_blank" href="<-LinkUrl->"
+                                       title="<-LinkDescription->"><-LinkTitle-></a></div>
+                              </BlogLinkDump>
+                              <div class=li-Sid><a target="_blank" href="http://mahskin.ir" rel="nofollow">قالب
+                                    وبلاگ</a></div>
+                              <div class=li-Sid><a href="javascript:void(0)" onclick="OpenLD();">آرشیو لینکها</a></div>
+                           </div>
+                           <div class=LowSid></div>
+                        </BlogLinkDumpBlock>
+
+
+
+                        <div class="TopSid">
+                           <div class=TopSid2>ذکر ایام هفته</div>
+                        </div>
+                        <div class=CenterSid>
+                           <p align="center">
+                              <script type=text/javascript
+                                 src="http://PICHAK.net/zekr-rooz/show.php?urlweb=mahskin.ir&n=21"></script>
+                           </p>
+                        </div>
+                        <div class=LowSid></div>
+
+
+                        <div class="TopSid">
+                           <div class=TopSid2>ربات مترجم</div>
+                        </div>
+                        <div class=CenterSid>
+                           <center>
+                              <script language="javascript"
+                                 src="http://pichAk.Net/blogcod/dictionary/dic/cod2.php?width=1&border=777777&bgcolor=EFEFEF&tcolor=A82A11&urlweb=mahskin.ir"></script>
+                           </center>
+                        </div>
+                        <div class=LowSid></div>
+
+
+
+                        <div class="TopSid">
+                           <div class=TopSid2>آرشیو مطالب</div>
+                        </div>
+                        <div class=CenterSid>
+                           <BlogArchive maxitems="8" archivetitle="آرشیو ">
+                              <BlogArchive>
+                                 <div class=li-Sid><a href="<-ArchiveLink->"><-ArchiveTitle-></a></div>
+                              </BlogArchive>
+                        </div>
+                        <div class=LowSid></div>
+
+
+                        <div class="TopSid">
+                           <div class=TopSid2>حامیان ماه اسکین</div>
+                        </div>
+                        <div class=CenterSid>
+                           ﻿<div class=li-Sid>
+                              <a target="_blank" href="https://mahskin.ir" rel="nofollow">قالب وبلاگ</a>
+                           </div>
+                           <div class=li-Sid><a href="https://mihanelectric.com/" rel="nofollow">میهن</a>
+                           </div>
+                           <div class=li-Sid><a target="_blank"
+                                 href="https://irancabl.com/product/%d9%81%d9%86%d8%b1-%d8%b3%db%8c%d9%85-%da%a9%d8%b4%db%8c-15-%d9%85%d8%aa%d8%b1%db%8c-%d8%b3%db%8c%d9%85-%d8%a8%da%a9%d8%b3%d9%84%db%8c-%d8%a8%d8%a7-%d8%b1%d9%88%da%a9%d8%b4-%d9%be%d9%84%d8%a7%d8%b3/"
+                                 rel="nofollow">فنر سیم کشی 15 متری</a>
+                           </div>
+                           <div class=li-Sid><a target="_blank"
+                                 href="https://mihanelectric.com/2191/%d9%81%d8%b1%d9%88%d8%b4-%d8%b9%d9%85%d8%af%d9%87-%da%86%d8%b1%d8%a7%d8%ba-%d8%aa%d9%88%d9%86%d9%84%db%8c/"
+                                 rel="nofollow">چراغ تونلی</a>
+                           </div>
+                           <div class=li-Sid>﻿<a href="http://arezooyesafar.ir/" title="وب آرزوی سفر" target="_blank"
+                                 rel="nofollow">وب آرزوی سفر</a></div>
+                           <div class=li-Sid><a href="http://mahskin.ir/category/templates-blogfa.php"
+                                 rel="nofollow">قالب بلاگفا</a></div>
+                        </div>
+                        <div class=LowSid></div>
+
+
+
+
+
+                        <div class="TopSid">
+                           <div class=TopSid2>امکانات وب</div>
+                        </div>
+                        <div class=CenterSid>
+                           <div class=About>
+                              <div style="text-align:center">
+                                 <-BlogCustomHtml-><br>
+                              </div>
+                           </div>
+                        </div>
+                        <div class=LowSid></div>
+
+
+                     </div>
+                  </div>
+               </div>
+
+               <div class=footer>
+
+                  <div class=Fo1>
+                     <a href="http://mahskin.ir/category/templates-blogfa.php?tag=%D9%82%D8%A7%D9%84%D8%A8-%D9%88%D8%A8%D9%84%D8%A7%DA%AF-%D8%A8%D9%84%D8%A7%DA%AF%D9%81%D8%A7"
+                        target="_blank" rel="nofollow">قالب بلاگفا</a> : <a href="http://mahskin.ir" target="_blank"
+                        rel="nofollow"> ماه اسکین </a> | Weblog Themes By : <a href="http://mahskin.ir" target="_blank"
+                        rel="nofollow"> M a h S k i n . i r </a>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+</body><!-- Design by Mah Skin . Ir -->
+
+</html>
